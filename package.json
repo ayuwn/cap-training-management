@@ -50,14 +50,6 @@
           "url": "db.sqlite"
         }
       },
-      "[production]": {
-        "db": {
-          "kind": "hana"
-        },
-        "auth": {
-          "kind": "xsuaa"
-        }
-      },
       "[development]": {
         "auth": {
           "kind": "mocked-auth",
