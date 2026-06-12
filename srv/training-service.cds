@@ -42,6 +42,7 @@ using {sap.fe.cap.training as my} from '../db/schema';
 service TrainingService @(path: '/processor') {
 
     @odata.draft.enabled
+
     entity TrainingRequest as projection on my.TrainingRequest
         actions {
             action rejectTrainingRequest();

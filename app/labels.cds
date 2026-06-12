@@ -7,7 +7,7 @@ using {sap.fe.cap.training as schema} from '../db/schema';
 annotate schema.TrainingRequest with @title: 'Training' {
   TrainingRequestUUID @UI.Hidden;
   TrainingRequestID   @title               : 'Training ID';
-  BeginDate           @title               : 'Start Date';
+  BeginDate           @title               : 'Date';
   EndDate             @title               : 'End Date';
   Description         @title               : 'Training Description';
   Provider            @title               : 'Provider';

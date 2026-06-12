@@ -1,5 +1,5 @@
 {
-  "name": "@capire/sflight",
+  "name": "@cap/training_management",
   "version": "1.0.0",
   "private": true,
   "description": "CAP Training Management",
@@ -13,7 +13,7 @@
     "test": "jest",
     "test:mocha": "npx -y mocha",
     "training-processor": "cds watch --open sap.fe.cap.training/index.html?sap-ui-xx-viewCache=false",
-    "training-analytics": "cds watch --open sap.fe.cap.trainingl_analytics/index.html?sap-ui-xx-viewCache=false"
+    "training-analytics": "cds watch --open sap.fe.cap.training_analytics/index.html?sap-ui-xx-viewCache=false"
   },
   "dependencies": {
     "@cap-js/hana": "^2",

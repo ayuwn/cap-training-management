@@ -12,6 +12,10 @@ annotate TrainingService.TrainingRequest with @Common.SideEffects: {
   ]
 };
 
+annotate TrainingService.TrainingRequest {
+  FilterDate @Common.Label: 'Date';
+};
+
 annotate TrainingService.TrainingRequest with @UI : {
 
   Identification                 : [
@@ -56,8 +60,7 @@ annotate TrainingService.TrainingRequest with @UI : {
     TrainingStatus_code,
     to_Employee_EmployeeID,
     to_Training_TrainingID,
-    BeginDate,
-    EndDate
+    BeginDate
   ],
 
   LineItem                       : [
@@ -93,6 +96,7 @@ annotate TrainingService.TrainingRequest with @UI : {
     },
     {
       Value             : BeginDate,
+      Label             : 'Start Date',
       @UI.Importance    : #High,
       @HTML5.CssDefaults: {width: '7em'}
     },

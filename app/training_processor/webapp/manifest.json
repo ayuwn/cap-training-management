@@ -126,16 +126,23 @@
                 "options": {
                     "settings": {
                     "entitySet": "TrainingRequest",
+                    "filterSettings": {
+                        "showDraftEditState": false
+                    },
                     "controlConfiguration": {
                         "@com.sap.vocabularies.UI.v1.LineItem": {
-                        "tableSettings": {
-                            "type": "ResponsiveTable",
-                            "personalization": {
-                            "column": false,
-                            "sort": false,
-                            "filter": false
+                            "tableSettings": {
+                                "type": "ResponsiveTable",
+                                "personalization": {
+                                "column": false,
+                                "sort": true,
+                                "filter": true
+                                }
                             }
-                        }
+                        },
+                        "@com.sap.vocabularies.UI.v1.SelectionFields": {
+                            "useSemanticDateRange": true,
+                            "disableDraftEditStateFilter": true
                         }
                     },
                     "variantManagement": "Page",
