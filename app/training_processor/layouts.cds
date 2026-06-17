@@ -12,10 +12,6 @@ annotate TrainingService.TrainingRequest with @Common.SideEffects: {
   ]
 };
 
-annotate TrainingService.TrainingRequest {
-  FilterDate @Common.Label: 'Date';
-};
-
 annotate TrainingService.TrainingRequest with @UI : {
 
   Identification                 : [
